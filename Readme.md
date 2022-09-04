@@ -1,0 +1,1 @@
+Sample of my homework
