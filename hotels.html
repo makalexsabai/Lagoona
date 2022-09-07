@@ -12,16 +12,20 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header section">
     <div class="container">
-      <div class="header__top-block">
-        <a class="header-link header-logo" href="#"><img src="img/logo.svg" alt="Логотип сети отелей Лагуна"></a>
-        <a class="header-link header-phone" href="tel:+74953225448">+7 495 322-54-48</a>
-        <a class="header-link header-account" href="#">Личный кабинет</a>
+      <div class="header__top-block flex">
+        <div class="header__top-block--left flex">
+          <a class="header-link header-logo" href="#"><img src="img/logo.svg" alt="Логотип сети отелей Лагуна"></a>
+          <a class="header-link header-phone" href="tel:+74953225448">+7 495 322-54-48</a>
+        </div>
+        <div class="header__top-block--right flex">
+          <a class="header-link header-account" href="#">Личный кабинет</a>
+        </div>
       </div>
-      <div class="header__bottom-block">
+      <div class="header__bottom-block flex">
         <nav class="header-nav">
-          <ul class="header-list">
+          <ul class="header-list list-reset flex">
             <li class="header-item">
               <a class="header-nav__link" href="#about">
                 О&nbsp;нас
@@ -54,26 +58,26 @@
             </li>
           </ul>
         </nav>
-      </div>
-      <div class="header__buttons">
-        <button class="button header-button">
-          Хочу тур
-        </button>
-        <button class="button header-button">
-          Обратный звонок
-        </button>
+        <div class="header__buttons">
+          <button class="button button-reset header-button">
+            Хочу тур
+          </button>
+          <button class="button button-reset header-button">
+            Обратный звонок
+          </button>
+        </div>
       </div>
     </div>
   </header>
   <main class="main">
-    <section class="offers">
+    <section class="offers section">
       <div class="container">
         <h2 class="section-title offers-title">
           Спецпредложения
         </h2>
-        <div class="offers-wrap">
-          <div class="offers-left">
-            <article class="offers-card">
+        <div class="offers-wrap flex">
+          <div class="offers-left flex">
+            <article class="offers-card-left flex">
               <h3 class="offers-card-title">
                 Мальдивские острова
               </h3>
@@ -84,9 +88,9 @@
                 Подробнее
               </a>
             </article>
-            <article class="offer-card">
+            <article class="offers-card-left flex">
               <h3 class="offers-card-title">
-                Горящий тур на остров Крит
+                Горящий тур на&nbsp;остров Крит
               </h3>
               <span class="offers-price">
                 от 30 000 р
@@ -96,21 +100,21 @@
               </a>
             </article>
           </div>
-          <article class="offers-card offers-right">
+          <article class="offers-card-right flex">
             <h3 class="offers-card-title">
               Номера категории люкс
             </h3>
-            <span class="offer-price">
+            <span class="offers-price">
               от 5 000 р
             </span>
-            <a class="offer-more" href="#">
+            <a class="offers-link" href="#">
               Подробнее
             </a>
           </article>
         </div>
       </div>
     </section>
-    <section id="about" class="about">
+    <section id="about" class="section about">
       <div class="container">
         <h1 class="section-title about-title">
           О&nbsp;нас
@@ -125,12 +129,12 @@
           и&nbsp;административных условий.</p>
       </div>
     </section>
-    <section id="services" class="services">
+    <section id="services" class="section services">
       <div class="container">
         <h2 class="section-title services-title">
           Услуги
         </h2>
-        <ul class="services-list">
+        <ul class="services-list list-reset flex">
           <li class="services-item">
             <div class="services-card-img">
             </div>
@@ -190,12 +194,12 @@
         </ul>
       </div>
     </section>
-    <section id="advantages" class="advantages">
+    <section id="advantages" class="section advantages">
       <div class="container">
         <h2 class="section-title advantages-title">
           Преимущества
         </h2>
-        <ul class="advantages-list">
+        <ul class="advantages-list list-reset flex">
           <li class="advantages-item">
             <div class="advantages-item-img first-advantage">
             </div>
@@ -256,16 +260,16 @@
         </ul>
       </div>
     </section>
-    <section id="accommodation" class="accommodation">
+    <section id="accommodation" class="section accommodation">
       <div class="container">
         <h2 class="section-title accommodation-title">
           Размещение
         </h2>
-        <ul class="accommodation-list">
+        <ul class="accommodation-list list-reset flex">
           <li class="accommodation-item">
             <article class="accommodation-card">
               <img class="accommodation-card-img" src="img/hotel1.jpg" alt="Изображение отеля">
-              <div class="accomodation-price-wrapper">
+              <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
                   от
                   4&nbsp;698&nbsp;₽
@@ -279,21 +283,23 @@
                   <img src="img/star_minus.svg" alt="">
                 </div>
               </div>
-              <h3 class="accommodation-card-title">
-                Lagoona espa&ntilde;ola
-              </h3>
-              <span class="accommodation-card-location">
-                Барселона, Испания
-              </span>
-              <button class="button accommodation-card-button">
-                Номера
-              </button>
+              <div class="accommodation-text-wrapper flex">
+                <h3 class="accommodation-card-title">
+                  Lagoona espa&ntilde;ola
+                </h3>
+                <span class="accommodation-card-location">
+                  Барселона, Испания
+                </span>
+                <button class="button button-reset accommodation-card-button">
+                  Номера
+                </button>
+              </div>
             </article>
           </li>
           <li class="accommodation-item">
             <article class="accommodation-card">
               <img class="accommodation-card-img" src="img/hotel2.jpg" alt="Изображение отеля">
-              <div class="accomodation-price-wrapper">
+              <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
                   от
                   5&nbsp;148&nbsp;₽
@@ -307,21 +313,23 @@
                   <img src="img/star_minus.svg" alt="">
                 </div>
               </div>
-              <h3 class="accommodation-card-title">
-                Lagoona son t&iacute;picas
-              </h3>
-              <span class="accommodation-card-location">
-                Барселона, Испания
-              </span>
-              <button class="button accommodation-card-button">
-                Номера
-              </button>
+              <div class="accommodation-text-wrapper flex">
+                <h3 class="accommodation-card-title">
+                  Lagoona son t&iacute;picas
+                </h3>
+                <span class="accommodation-card-location">
+                  Барселона, Испания
+                </span>
+                <button class="button button-reset accommodation-card-button">
+                  Номера
+                </button>
+              </div>
             </article>
           </li>
           <li class="accommodation-item">
             <article class="accommodation-card">
               <img class="accommodation-card-img" src="img/hotel3.jpg" alt="Изображение отеля">
-              <div class="accomodation-price-wrapper">
+              <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
                   от
                   6&nbsp;254&nbsp;₽
@@ -335,21 +343,23 @@
                   <img src="img/star.svg" alt="">
                 </div>
               </div>
-              <h3 class="accommodation-card-title">
-                Lagoona de&nbsp;la&nbsp;guerra
-              </h3>
-              <span class="accommodation-card-location">
-                Барселона, Испания
-              </span>
-              <button class="button accommodation-card-button">
-                Номера
-              </button>
+              <div class="accommodation-text-wrapper flex">
+                <h3 class="accommodation-card-title">
+                  Lagoona de&nbsp;la&nbsp;guerra
+                </h3>
+                <span class="accommodation-card-location">
+                  Барселона, Испания
+                </span>
+                <button class="button button-reset accommodation-card-button">
+                  Номера
+                </button>
+              </div>
             </article>
           </li>
           <li class="accommodation-item">
             <article class="accommodation-card">
               <img class="accommodation-card-img" src="img/hotel4.jpg" alt="Изображение отеля">
-              <div class="accomodation-price-wrapper">
+              <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
                   от
                   6&nbsp;320&nbsp;₽
@@ -363,21 +373,23 @@
                   <img src="img/star.svg" alt="">
                 </div>
               </div>
-              <h3 class="accommodation-card-title">
-                Lagoona mentira piadosa
-              </h3>
-              <span class="accommodation-card-location">
-                Барселона, Испания
-              </span>
-              <button class="button accommodation-card-button">
-                Номера
-              </button>
+              <div class="accommodation-text-wrapper flex">
+                <h3 class="accommodation-card-title">
+                  Lagoona mentira piadosa
+                </h3>
+                <span class="accommodation-card-location">
+                  Барселона, Испания
+                </span>
+                <button class="button button-reset accommodation-card-button">
+                  Номера
+                </button>
+              </div>
             </article>
           </li>
           <li class="accommodation-item">
             <article class="accommodation-card">
               <img class="accommodation-card-img" src="img/hotel5.jpg" alt="Изображение отеля">
-              <div class="accomodation-price-wrapper">
+              <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
                   от
                   6&nbsp;457&nbsp;₽
@@ -391,21 +403,23 @@
                   <img src="img/star_minus.svg" alt="">
                 </div>
               </div>
-              <h3 class="accommodation-card-title">
-                Lagoona empujar la&nbsp;creatividad
-              </h3>
-              <span class="accommodation-card-location">
-                Барселона, Испания
-              </span>
-              <button class="button accommodation-card-button">
-                Номера
-              </button>
+              <div class="accommodation-text-wrapper flex">
+                <h3 class="accommodation-card-title">
+                  Lagoona empujar la&nbsp;creatividad
+                </h3>
+                <span class="accommodation-card-location">
+                  Барселона, Испания
+                </span>
+                <button class="button button-reset accommodation-card-button">
+                  Номера
+                </button>
+              </div>
             </article>
           </li>
           <li class="accommodation-item">
             <article class="accommodation-card">
               <img class="accommodation-card-img" src="img/hotel6.jpg" alt="Изображение отеля">
-              <div class="accomodation-price-wrapper">
+              <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
                   от
                   6&nbsp;320&nbsp;₽
@@ -419,21 +433,23 @@
                   <img src="img/star_minus.svg" alt="">
                 </div>
               </div>
-              <h3 class="accommodation-card-title">
-                Lagoona el&nbsp;retorno
-              </h3>
-              <span class="accommodation-card-location">
-                Барселона, Испания
-              </span>
-              <button class="button accommodation-card-button">
-                Номера
-              </button>
+              <div class="accommodation-text-wrapper flex">
+                <h3 class="accommodation-card-title">
+                  Lagoona el&nbsp;retorno
+                </h3>
+                <span class="accommodation-card-location">
+                  Барселона, Испания
+                </span>
+                <button class="button button-reset accommodation-card-button">
+                  Номера
+                </button>
+              </div>
             </article>
           </li>
           <li class="accommodation-item">
             <article class="accommodation-card">
               <img class="accommodation-card-img" src="img/hotel7.jpg" alt="Изображение отеля">
-              <div class="accomodation-price-wrapper">
+              <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
                   от
                   6&nbsp;505&nbsp;₽
@@ -447,21 +463,23 @@
                   <img src="img/star.svg" alt="">
                 </div>
               </div>
-              <h3 class="accommodation-card-title">
-                Lagoona mentira piadosa
-              </h3>
-              <span class="accommodation-card-location">
-                Барселона, Испания
-              </span>
-              <button class="button accommodation-card-button">
-                Номера
-              </button>
+              <div class="accommodation-text-wrapper flex">
+                <h3 class="accommodation-card-title">
+                  Lagoona mentira piadosa
+                </h3>
+                <span class="accommodation-card-location">
+                  Барселона, Испания
+                </span>
+                <button class="button button-reset accommodation-card-button">
+                  Номера
+                </button>
+              </div>
             </article>
           </li>
           <li class="accommodation-item">
             <article class="accommodation-card">
               <img class="accommodation-card-img" src="img/hotel8.jpg" alt="Изображение отеля">
-              <div class="accomodation-price-wrapper">
+              <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
                   от
                   6&nbsp;824&nbsp;₽
@@ -475,18 +493,20 @@
                   <img src="img/star_minus.svg" alt="">
                 </div>
               </div>
-              <h3 class="accommodation-card-title">
-                Lagoona suerte sigui&oacute; siempre
-              </h3>
-              <span class="accommodation-card-location">
-                Барселона, Испания
-              </span>
-              <button class="button accommodation-card-button">
-                Номера
-              </button>
+              <div class="accommodation-text-wrapper flex">
+                <h3 class="accommodation-card-title">
+                  Lagoona suerte sigui&oacute; siempre
+                </h3>
+                <span class="accommodation-card-location">
+                  Барселона, Испания
+                </span>
+                <button class="button button-reset accommodation-card-button">
+                  Номера
+                </button>
+              </div>
             </article>
           </li>
-          <li class="accommodation-item">
+          <li class="accommodation-item accommodation-last flex">
             <a href="#" class="accommodation-card text-more">
               Посмотреть все варианты
             </a>
