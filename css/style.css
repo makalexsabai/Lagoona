@@ -17,8 +17,51 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Regular"),
+    url("/fonts/MullerRegular.woff2") format("woff2"),
+    url("/fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Light"),
+    url("/fonts/MullerLight.woff2") format("woff2"),
+    url("/fonts/MullerLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Medium"),
+    url("/fonts/MullerMedium.woff2") format("woff2"),
+    url("/fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Bold"),
+    url("/fonts/MullerBold.woff2") format("woff2"),
+    url("/fonts/MullerBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   min-width: 1200px;
+  font-family: "Muller", sans-serif;
+  font-weight: 400;
+  background-color: #E5E5E5;
 }
 
 .list-reset {
@@ -48,10 +91,28 @@ body {
   margin: 0;
   margin-bottom: 20px;
   padding-left: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.button {
+  padding: 13px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
 }
 
 .text-block {
   margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
 }
 
 .accommodation-card-title {
@@ -63,6 +124,10 @@ body {
 }
 
 /* header */
+
+.header-list {
+  flex-wrap: wrap;
+}
 
 .header__top-block {
   align-items: center;
@@ -79,13 +144,46 @@ body {
   margin-right: 40px;
 }
 
+.header-phone {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
+}
+
+.header-account {
+  background-image: url(/img/account_arrow.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  padding-left: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+}
+
 .header__bottom-block {
-  padding: 27px 45px;
+  padding: 13px 45px;
   justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.header-item {
+  padding: 13px 0;
 }
 
 .header-item:not(:last-child) {
   margin-right: 45px;
+}
+
+.header-nav__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
 }
 
 .header-button:not(:last-child) {
@@ -97,10 +195,37 @@ body {
 .offers-card-title {
   margin: 0;
   margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.enormous-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
 }
 
 .offers-price {
   margin-bottom: 47px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.offers-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #F0BF5F;
+  background-image: url(/img/article_arrow.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 1em;
 }
 
 .offers-left {
@@ -128,6 +253,26 @@ body {
   padding: 40px 108px 40px 45px;
 }
 
+.offers-card-left,
+.offers-card-right {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.offer-first {
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(/img/1.jpg);
+}
+
+.offer-second {
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(/img/2.jpg);
+}
+
+.offer-third {
+  background-image: url(/img/3.jpg);
+}
+
 /* about */
 
 .about-descr {
@@ -142,6 +287,8 @@ body {
 
 .services-item {
   width: 573px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .services-item:not(:nth-child(2n)) {
@@ -152,8 +299,48 @@ body {
   margin-bottom: 24px;
 }
 
+.services-card-img {
+  width: 100%;
+  padding-bottom: 29%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service-first {
+  background-image: url(/img/4.jpg);
+}
+
+.service-second {
+  background-image: url(/img/5.jpg);
+}
+
+.service-third {
+  background-image: url(/img/6.jpg);
+}
+
+.service-fourth {
+  background-image: url(/img/7.jpg);
+}
+
+.services-card-content {
+  padding: 26px 126px 35px 45px;
+  background-color: #fff;
+}
+
 .services-card-title {
   margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #CC9933;
+}
+
+.services-card-link {
+  background-image: url(/img/article_arrow.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 1em;
 }
 
 /* advantages */
@@ -165,6 +352,46 @@ body {
 .advantages-item {
   width: 276px;
   padding: 40px 42px 32px 45px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.advantages-item-img {
+  background-repeat: no-repeat;
+  background-size: 66px 66px;
+  padding-bottom: 40%;
+}
+
+.first-advantage {
+  background-image: url(/img/advant1.svg);
+}
+
+.second-advantage {
+  background-image: url(/img/advant2.svg);
+}
+
+.third-advantage {
+  background-image: url(/img/advant3.svg);
+}
+
+.fourth-advantage {
+  background-image: url(/img/advant4.svg);
+}
+
+.fifth-advantage {
+  background-image: url(/img/advant5.svg);
+}
+
+.sixth-advantage {
+  background-image: url(/img/advant6.svg);
+}
+
+.seventh-advantage {
+  background-image: url(/img/advant7.svg);
+}
+
+.eighth-advantage {
+  background-image: url(/img/advant8.svg);
 }
 
 .advantages-item:not(:nth-child(4n)) {
@@ -183,6 +410,9 @@ body {
 
 .accommodation-item {
   width: 374px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .accommodation-item:not(:nth-child(3n)) {
@@ -213,4 +443,58 @@ body {
   align-items: flex-end;
   justify-content: center;
   padding: 0 45px 27px;
+}
+
+.accommodation-card-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.accommodation-card-location {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+  margin-bottom: 20px;
+}
+
+.from {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.roubles {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.per-night {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.accommodation-last {
+  background-image: url(/img/hotelmore.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-more {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #FFFFFF;
+  background-image: url(/img/more_options_arrow.svg);
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding-right: 1em;
 }

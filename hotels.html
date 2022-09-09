@@ -58,7 +58,7 @@
             </li>
           </ul>
         </nav>
-        <div class="header__buttons">
+        <div class="header__buttons flex">
           <button class="button button-reset header-button">
             Хочу тур
           </button>
@@ -77,39 +77,45 @@
         </h2>
         <div class="offers-wrap flex">
           <div class="offers-left flex">
-            <article class="offers-card-left flex">
+            <article class="offers-card-left offer-first flex">
               <h3 class="offers-card-title">
                 Мальдивские острова
               </h3>
               <span class="offers-price">
                 от 55 000 р
               </span>
-              <a class="offers-link" href="#">
-                Подробнее
-              </a>
+              <span>
+                <a class="offers-link" href="#">
+                  Подробнее
+                </a>
+              </span>
             </article>
-            <article class="offers-card-left flex">
+            <article class="offers-card-left offer-second flex">
               <h3 class="offers-card-title">
                 Горящий тур на&nbsp;остров Крит
               </h3>
               <span class="offers-price">
                 от 30 000 р
               </span>
-              <a class="offers-link" href="#">
-                Подробнее
-              </a>
+              <span>
+                <a class="offers-link" href="#">
+                  Подробнее
+                </a>
+              </span>
             </article>
           </div>
-          <article class="offers-card-right flex">
-            <h3 class="offers-card-title">
+          <article class="offers-card-right offer-third flex">
+            <h3 class="offers-card-title enormous-title">
               Номера категории люкс
             </h3>
             <span class="offers-price">
               от 5 000 р
             </span>
-            <a class="offers-link" href="#">
-              Подробнее
-            </a>
+            <span>
+              <a class="offers-link" href="#">
+                Подробнее
+              </a>
+            </span>
           </article>
         </div>
       </div>
@@ -136,7 +142,7 @@
         </h2>
         <ul class="services-list list-reset flex">
           <li class="services-item">
-            <div class="services-card-img">
+            <div class="services-card-img service-first">
             </div>
             <div class="services-card-content">
               <h3 class="services-card-title">
@@ -150,7 +156,7 @@
             </div>
           </li>
           <li class="services-item">
-            <div class="services-card-img">
+            <div class="services-card-img service-second">
             </div>
             <div class="services-card-content">
               <h3 class="services-card-title">
@@ -164,7 +170,7 @@
             </div>
           </li>
           <li class="services-item">
-            <div class="services-card-img">
+            <div class="services-card-img service-third">
             </div>
             <div class="services-card-content">
               <h3 class="services-card-title">
@@ -178,7 +184,7 @@
             </div>
           </li>
           <li class="services-item">
-            <div class="services-card-img">
+            <div class="services-card-img service-fourth">
             </div>
             <div class="services-card-content">
               <h3 class="services-card-title">
@@ -271,9 +277,9 @@
               <img class="accommodation-card-img" src="img/hotel1.jpg" alt="Изображение отеля">
               <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
-                  от
-                  4&nbsp;698&nbsp;₽
-                  / ночь
+                  <span class="from">от</span>
+                  <span class="roubles">4&nbsp;698&nbsp;₽</span>
+                  <span class="per-night">/ ночь</span>
                 </span>
                 <div class="rating">
                   <img src="img/star.svg" alt="Рейтинг 4 из 5">
@@ -301,9 +307,9 @@
               <img class="accommodation-card-img" src="img/hotel2.jpg" alt="Изображение отеля">
               <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
-                  от
-                  5&nbsp;148&nbsp;₽
-                  / ночь
+                  <span class="from">от</span>
+                  <span class="roubles">5&nbsp;148&nbsp;₽</span>
+                  <span class="per-night">/ ночь</span>
                 </span>
                 <div class="rating">
                   <img src="img/star.svg" alt="Рейтинг 4 из 5">
@@ -331,9 +337,9 @@
               <img class="accommodation-card-img" src="img/hotel3.jpg" alt="Изображение отеля">
               <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
-                  от
-                  6&nbsp;254&nbsp;₽
-                  / ночь
+                  <span class="from">от</span>
+                  <span class="roubles">6&nbsp;254&nbsp;₽</span>
+                  <span class="per-night">/ ночь</span>
                 </span>
                 <div class="rating">
                   <img src="img/star.svg" alt="Рейтинг 5 из 5">
@@ -361,9 +367,9 @@
               <img class="accommodation-card-img" src="img/hotel4.jpg" alt="Изображение отеля">
               <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
-                  от
-                  6&nbsp;320&nbsp;₽
-                  / ночь
+                  <span class="from">от</span>
+                  <span class="roubles">6&nbsp;320&nbsp;₽</span>
+                  <span class="per-night">/ ночь</span>
                 </span>
                 <div class="rating">
                   <img src="img/star.svg" alt="Рейтинг 5 из 5">
@@ -391,9 +397,9 @@
               <img class="accommodation-card-img" src="img/hotel5.jpg" alt="Изображение отеля">
               <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
-                  от
-                  6&nbsp;457&nbsp;₽
-                  / ночь
+                  <span class="from">от</span>
+                  <span class="roubles">5&nbsp;457&nbsp;₽</span>
+                  <span class="per-night">/ ночь</span>
                 </span>
                 <div class="rating">
                   <img src="img/star.svg" alt="Рейтинг 4 из 5">
@@ -421,9 +427,9 @@
               <img class="accommodation-card-img" src="img/hotel6.jpg" alt="Изображение отеля">
               <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
-                  от
-                  6&nbsp;320&nbsp;₽
-                  / ночь
+                  <span class="from">от</span>
+                  <span class="roubles">6&nbsp;320&nbsp;₽</span>
+                  <span class="per-night">/ ночь</span>
                 </span>
                 <div class="rating">
                   <img src="img/star.svg" alt="Рейтинг 4 из 5">
@@ -451,9 +457,9 @@
               <img class="accommodation-card-img" src="img/hotel7.jpg" alt="Изображение отеля">
               <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
-                  от
-                  6&nbsp;505&nbsp;₽
-                  / ночь
+                  <span class="from">от</span>
+                  <span class="roubles">6&nbsp;505&nbsp;₽</span>
+                  <span class="per-night">/ ночь</span>
                 </span>
                 <div class="rating">
                   <img src="img/star.svg" alt="Рейтинг 5 из 5">
@@ -481,9 +487,9 @@
               <img class="accommodation-card-img" src="img/hotel8.jpg" alt="Изображение отеля">
               <div class="accomodation-price-wrapper flex">
                 <span class="accommodation-card-price">
-                  от
-                  6&nbsp;824&nbsp;₽
-                  / ночь
+                  <span class="from">от</span>
+                  <span class="roubles">6&nbsp;824&nbsp;₽</span>
+                  <span class="per-night">/ ночь</span>
                 </span>
                 <div class="rating">
                   <img src="img/star.svg" alt="Рейтинг 4 из 5">
