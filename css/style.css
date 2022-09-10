@@ -498,3 +498,72 @@ body {
   background-repeat: no-repeat;
   padding-right: 1em;
 }
+
+/* booking */
+
+.booking-container {
+  background-color: #E9E9E9;
+  border-radius: 15px;
+}
+.form {
+  padding-bottom: 45px;
+}
+
+.booking-title {
+  padding-top: 45px;
+}
+
+.form-wrapper {
+  justify-content: space-between;
+  margin-left: 45px;
+  margin-right: 45px;
+  padding: 32px 28px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.input-wrapper {
+  width: 85%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input-descr {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-descr select {
+  width: 169px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.input-descr input {
+  width: 121px;
+  border: none;
+  border-bottom: 1px solid #E5E5E5;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.input-descr label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+  padding-bottom: 15px;
+}
+
+.form-button button {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* contacts */
+

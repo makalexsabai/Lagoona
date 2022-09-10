@@ -520,6 +520,56 @@
         </ul>
       </div>
     </section>
+    <section class="section booking">
+      <div class="container">
+        <div class="booking-container">
+          <h3 class="section-title booking-title">
+            Хочу тур
+          </h3>
+          <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <div class="form-wrapper flex">
+              <div class="input-wrapper flex">
+                <div class="input-descr">
+                  <label for="departure-city">Город вылета</label>
+                  <select name="departure-city" id="departure-city">
+                    <option value="Moscow" selected>Москва</option>
+                    <option value="Saint-Petersburg">Санкт-Петербург</option>
+                    <option value="Kazan">Казань</option>
+                    <option value="Omsk">Омск</option>
+                    <option value="Ekaterinburg">Екатеринбург</option>
+                  </select>
+                </div>
+                <div class="input-descr">
+                  <label for="country">Страна</label>
+                  <select name="country" id="country">
+                    <option value="Vietnam" selected>Вьетнам</option>
+                    <option value="Thailand">Тайланд</option>
+                    <option value="Spain">Испания</option>
+                    <option value="Turkey">Турция</option>
+                    <option value="Cuba">Куба</option>
+                  </select>
+                </div>
+                <div class="input-descr">
+                  <label for="date">Дата прибытия</label>
+                  <input type="date" id="date">
+                </div>
+                <div class="input-descr">
+                  <label for="nights">Ночей</label>
+                  <input type="number" id="nights" name="nights" min="3" value="3">
+                </div>
+                <div class="input-descr">
+                  <label for="tourists">Туристы</label>
+                  <input type="number" id="tourists" name="tourists" min="1" value="1">
+                </div>
+              </div>
+              <div class="form-button">
+                <button class="button-reset button">Найти</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
 
